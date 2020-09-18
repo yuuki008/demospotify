@@ -25,6 +25,21 @@ export const spotifyReducer = (state = initialState.spotify, action) => {
                 ...state,
                 items: action.items
             }
+        case Actions.FETCH_ARTIST:
+            return{
+                ...state,
+                artists: [...action.payload]
+            }
+        case Actions.FETCH_ALUBUM:
+            return{
+                ...state,
+                albums: [...action.payload]
+            }
+        case Actions.FETCH_TRACK:
+            return{
+                ...state,
+                tracks: [...action.payload]
+            }
         default:
             return state
     }

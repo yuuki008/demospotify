@@ -23,6 +23,30 @@ export const receiveItem = (item, json) => {
     }
 }
 
+export const FETCH_ARTIST = "FETCH_ARTIST"
+export const fetchArtistAction = (artists) => {
+    return {
+        type: FETCH_ARTIST,
+        payload: artists
+    }
+}
+
+export const FETCH_ALUBUM = "FETCH_ALBUM"
+export const fetchAlbumAction = (albums) => {
+    return{
+        type: FETCH_ALUBUM,
+        payload: albums
+    }
+}
+
+export const FETCH_TRACK = "FETCH_TRACK"
+export const fetchTrackAction = (tracks) => {
+    return{
+        type: FETCH_TRACK,
+        payload: tracks
+    }
+}
+
 export const SAVE_TOKEN = "SAVE_TOKEN"
 export const saveToken = (token) => {
     return{

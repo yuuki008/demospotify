@@ -1,3 +1,5 @@
+'Bearer 'この空白がないとうまく取得できなかった。
+
 const itemSelector = state.itemって書いてたらもう定義しているのでそのなかではstateを返すだけ
 
 fetchのoperationのところで、getしたところをreturnしてあげることで追加した情報を呼び出し元に戻して変数に代入する。

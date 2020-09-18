@@ -1,7 +1,9 @@
 .navbar-wrapper {
+	display: flex;
 	padding: 24px 16px;
 	text-align: center;
 	background-color: #151515;
+	justify-content: space-around;
 }
 .navbar-wrapper li {
 	display: inline-block;

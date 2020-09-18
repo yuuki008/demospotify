@@ -3,7 +3,9 @@ const initialState = {
     item: "",
     spotify:{
         searchItem: "",
-        items: {}
+        artists: [],
+        tracks: [],
+        albums: [],
     }
 }
 

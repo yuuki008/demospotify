@@ -1,10 +1,11 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-const TablistItem = ({label}) => {
+const TablistItem = ({label, path}) => {
     return (
-        <li role="presentation" style={{textDecoration: 'underline', color: '#fff'}}>
+        <Link to={path} role="presentation" style={{textDecoration: 'underline', color: '#fff'}}>
             <a>{label}</a>  
-        </li>
+        </Link>
     )
 }
 
