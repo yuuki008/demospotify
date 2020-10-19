@@ -4,8 +4,8 @@ import AudioController from './AudioController';
 import '../../styles/track.css'
 
 const Track = ({tracks}) => {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const [url, setUrl] = "";
+    const [isPlaying, setIsPlaying] = useState(false),
+          [url, setUrl] =useState("");
 
     const playToggle = useCallback((preview_url) => {
         setIsPlaying(!isPlaying)
